@@ -1,0 +1,19 @@
+[package]
+name = "hours-helper"
+description = "PizzaQL hours helper written in Rust and compiled to WASM."
+version = "0.1.0"
+authors = ["Antoni Kepinski <a@kepinski.me>"]
+license = "MIT"
+repository = "https://github.com/pizzaql/hours-helper-wasm"
+edition = "2018"
+publish = false
+
+[dependencies]
+wasm-bindgen = "0.2"
+chrono = "0.4"
+
+[lib]
+crate-type =["cdylib"]
+
+[profile.release]
+lto = true
