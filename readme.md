@@ -15,7 +15,7 @@ $ npm install @pizzaql/hours-helper
 ```js
 import * as wasm from '@pizzaql/hours-helper';
 
-wasm.get_time(3, true)
+wasm.get_time(3, true);
 ```
 
 ## Build
