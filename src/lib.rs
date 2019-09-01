@@ -1,21 +1,15 @@
 extern crate chrono;
 
-use chrono::{DateTime, Local, Timelike};
+use chrono::{DateTime, Duration, Local, Timelike};
 use wasm_bindgen::prelude::*;
 
 #[wasm_bindgen]
-pub fn get_time(number: u32, is_half_past: bool) -> String {
-    let now: DateTime<Local> = Local::now();
-    let date: u32 = now.hour() + number;
+pub fn get_time(number: i64, is_half_past: bool) -> String {
+    let now: DateTime<Local> = Local::now() + Duration::hours(number);
+    let date = now.hour();
 
     if is_half_past {
-        if date == 24 {
-            "00:30".to_string()
-        } else {
-            format!("{}:30", date)
-        }
-    } else if date == 24 {
-        "00:30".to_string()
+        format!("{}:30", date)
     } else {
         format!("{}:00", date)
     }
