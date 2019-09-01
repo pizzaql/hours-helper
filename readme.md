@@ -15,15 +15,17 @@ $ npm install @pizzaql/hours-helper
 ```js
 import * as wasm from '@pizzaql/hours-helper';
 
-wasm.get_time(3, false);
+wasm.get_time(3, true);
 ```
+
+## Build
 
 ### Prerequisites
 
 - [Rust](https://www.rust-lang.org/tools/install)
 - [wasm-pack](https://rustwasm.github.io/wasm-pack/installer/)
 
-To build npm package run:
+To build a npm package run:
 
 ```
 $ wasm-pack build
