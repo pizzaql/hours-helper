@@ -1,7 +1,7 @@
 [package]
 name = "hours-helper"
 description = "PizzaQL hours helper written in Rust and compiled to WASM."
-version = "0.3.3"
+version = "0.4.0"
 authors = ["Antoni Kepinski <a@kepinski.me>"]
 license = "MIT"
 repository = "https://github.com/pizzaql/hours-helper-wasm"
