@@ -20,3 +20,17 @@ pub fn get_time(number: u32, is_half_past: bool) -> String {
         format!("{}:00", date)
     }
 }
+
+#[wasm_bindgen]
+pub fn get_hours() -> u32 {
+    let now: DateTime<Local> = Local::now();
+
+    now.hour()
+}
+
+#[wasm_bindgen]
+pub fn get_minutes() -> u32 {
+    let now: DateTime<Local> = Local::now();
+
+    now.minute()
+}
