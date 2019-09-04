@@ -2,7 +2,7 @@
 
 > PizzaQL hours helper written in Rust and compiled to WASM.
 
-[![Build Status](https://travis-ci.org/pizzaql/hours-helper-wasm.svg?branch=master)](https://travis-ci.org/pizzaql/hours-helper-wasm)
+[![Build Status](https://travis-ci.org/pizzaql/hours-helper.svg?branch=master)](https://travis-ci.org/pizzaql/hours-helper)
 
 ## Install
 
